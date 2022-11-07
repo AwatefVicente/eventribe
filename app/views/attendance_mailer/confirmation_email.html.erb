@@ -4,9 +4,12 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Salut <%= @user.first_name %> et bienvenue chez nous !</h1>
+    <h1>Salut <%= @user.first_name %> merci pour ta réservation !</h1>
     <p>
-      Tu t'es inscrit sur calm-journey-06331.herokuapp.com en utilisant l'e-mail suivant : <%= @user.email %>.
+      Tu t'es inscrit pour l'événement : <%= @event.title %>.
+    </p>
+    <p>
+      Voici ton numéro de réservation : <%= @attendance.stripe_customer_id%>.
     </p>
     <p>
       Pour accéder à ton espace client, connecte-toi via : <%= @url %>.
