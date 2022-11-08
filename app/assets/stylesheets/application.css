@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ .navbar{
+  color: #019a86
+ }
+
+ h1{
+  color: #b7458d;
+ }
+
+
+ .card-link{
+  color: #30b3e7;
+ }
