@@ -14,15 +14,35 @@
  *= require_self
  */
 
+ body{
+  background-image: url("https://i.pinimg.com/564x/ad/b4/ad/adb4ad9cd0826ad65515cb008a61efc2.jpg");
+  background-size: cover;
+}
+
  .navbar{
   color: #019a86
  }
 
  h1{
   color: #b7458d;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+ }
+
+ hr{
+  color: #b7458d;
+  size: 30px;
+  border-width: 15px;
  }
 
 
  .card-link{
   color: #30b3e7;
  }
+
+ .blur {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(20px);
+}

@@ -1,26 +1,24 @@
 <body>
     <main>
-      <div class="text-center my-5" stye="background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjkwNC1udW5ueS0wMzMtZV8yLmpwZw.jpg'); height: 100vh;">
+      <div class="text-center my-5" stye="height: 100vh;">
       <h1>Prochains Évènements</h1>
       <hr>
 
       <div class="container-fluid">
         <div class="d-flex justify-content-center row mx-2 row-cols-5">
           <% @events.each do |event| %> 
-            <div class="col card mx-5 my-5 container-fluid mb-3" style="width: 18rem; border-color: #30b3e7">
-
-              <div class="card-body card_deck" >
-              <img class="card-img-top" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/311662535_2176715825843620_6188947143842351233_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=340051&_nc_ohc=xEu6qlG-uS8AX8VvySb&_nc_ht=scontent-cdg2-1.xx&oh=00_AfBU2oetCGju6x0laRewzB8rIcVnRmxUh8ojkwual23nXg&oe=636FB7EF" alt="Card image cap">
-                <h5 class="card-title"><%= event.title  %></h5>
-                <h6 class="card-subtitle mb-2 text-muted"><%= event.location %></h6>
-                <p class="card-text">
-                  <span class="red"><%= event.start_date %></span> |
-                  <%= event.price %>
-                </p>
-                <a href="events/<%=event.id%>" class="card-link">Découvrir</a>
+              <div class="col card mx-3 my-4 container-fluid mb-3 blur" style="width: 18rem; border-color: #30b3e7">
+                <div class="card-body card_deck" >
+                <img class="card-img-top" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t39.30808-6/311662535_2176715825843620_6188947143842351233_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=340051&_nc_ohc=xEu6qlG-uS8AX8VvySb&_nc_ht=scontent-cdg2-1.xx&oh=00_AfBU2oetCGju6x0laRewzB8rIcVnRmxUh8ojkwual23nXg&oe=636FB7EF" alt="Card image cap">
+                  <h5 class="card-title"><%= event.title  %></h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><%= event.location %></h6>
+                  <p class="card-text">
+                    <span class="red"><%= event.start_date %></span> |
+                    <%= event.price %>
+                  </p>
+                  <a href="events/<%=event.id%>" class="card-link">Découvrir</a>
+                </div>
               </div>
-
-            </div>
           <% end %>
         </div>
       </div>
